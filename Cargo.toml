@@ -4,3 +4,15 @@ version = "0.1.0"
 authors = ["Taro Yamashita <taro.ymst@gmail.com>"]
 
 [dependencies]
+diesel = { version = "0.13.*", features = ["postgres"] }
+diesel_codegen = { version = "0.13.*", features = ["postgres"] }
+dotenv = "0.9.*"
+rocket = "0.2.*"
+rocket_codegen = "0.2.*"
+serde = "0.9"
+serde_json = "0.9"
+serde_derive = "0.9"
+
+[dependencies.rocket_contrib]
+default-features = false
+features = ["json"]
